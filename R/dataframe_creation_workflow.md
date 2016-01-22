@@ -38,4 +38,4 @@ df2$v2 <- vector_2
 df2$v3 <- vector_3
 ```
 
-This second method is better if the vectors that you're adding to the dataframe are not named in a way that you'd want in the resulting dataframe. This saves you the hassle of modifying the column names by setting elements of the `colnames()` after the dataframe is createdf
+This second method is better if the vectors that you're adding to the dataframe are not named in a way that you'd want in the resulting dataframe. This saves you the hassle of modifying the column names by setting elements of the `colnames()` after the dataframe is created.
