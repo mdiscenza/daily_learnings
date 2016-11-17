@@ -27,7 +27,7 @@ Once we define the function, we can use it as follows on a dataframe of impressi
 
 ```python
 imps.registerTempTable("imps")
-sqlContext.sql("SELECT tstamp, day(tstamp) as day FROM imps").head()
+sqlContext.sql("SELECT tstamp, hour(tstamp) as day FROM imps").head()
 ```
 
 Notice that we had to register our dataframe to use it in the SQL context. Then we can use the UDF as we would in pretty much any SQL in the select statement. We call head so that Spark executes the command and we can see the result.
